@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h1>ToDo </h1>
+            <div class="icon"></div>
+        </div>
+        <p class="pagename">Home</p>
+    </div>
+
+    <div class="content">
+    <div class="sidebar">
+
+        <div class="home">Home</div>
+        <div class="all">All</div>
+        <div class="projects">
+            <p>Projects</p>
+            <button>Add project</button>
+            <ul class="projectList">
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="mainPage">
+
+        
+        <div class="tasks">
+            <h3>Tasks</h3>
+            <button class="addToDo">addTasks</button>
+            <ul class="todoList"></ul>
+
+        </div>
+
+
+
+    </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    <dialog class="todoinput">
+        <form class="todoinputform">
+            
+            
+            <label for="todoname">name of the task,sir?</label>
+            <input name="todoname" id="todoname" type="text">
+
+
+            
+            <label for="todoDescription">Description</label>
+            <textarea id="todoDescription" name="todoDescription" rows="4" cols="50"></textarea>
+            
+            <label for="todoPriority">Priority</label>
+            <select id="todoPriority" name="todoPriority">
+                <option value=2>urgent!</option>
+                <option value=1>meh!</option>
+            </select>
+
+            <label for="tododate">duedate</label>
+            <input type="date" id="tododate" name="tododate">
+
+            <button class="submit" type="submit">very good sir!</button>
+            <button class="cancel" type="submit">changed your mind?</button>
+
+        </form>
+
+    </dialog>
+
+    <dialog class="projectinput">
+        <form class="projectinputform">
+            <label for="projectname">what new endeavour?</label>
+            <input type="text" name="projectname" id="projectname">
+            <button class="submit" type="submit">very good sir!</button>
+            <button class="cancel" type="submit">changed your mind?</button>
+        </form>
+    </dialog>
+</body>
+</html>
